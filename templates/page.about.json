@@ -1,0 +1,45 @@
+{
+  "sections": {
+    "image": {
+      "type": "about-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/marmar-halim.webp",
+        "padding_top": 180,
+        "padding_bottom": 36
+      }
+    },
+    "content": {
+      "type": "about-content",
+      "settings": {
+        "heading": "ABOUT THE DESIGNER",
+        "about_us_content": "<p>MARMAR HALIM, a visionary Fashion Designer hailing from Egypt. With an incredible journey that led her to become the Creative Director and Founder of Marmar Halim Brand, MARMAR's story is one of inspiration and relentless pursuit of artistic excellence. MARMAR's ascent to success began with her graduation from the prestigious Fashion Design Centre, in partnership with Istituto di Moda Burgo, Milan, Italy. Her exceptional talent and unwavering dedication propelled her to the top of her class in Design, leaving an indelible mark on her educational journey.<\/p><p>What sets MARMAR apart is her innate attention to detail, comprehensive approach, and boundless imagination. Drawing from a profound foundation in arts and culture, she seamlessly weaves her artistic influences into the fabric of her fashion designs. MARMAR's creations transcend mere clothing; they are an expression of her artistic vision, encapsulating the beauty and diversity of cultures that have shaped her.<\/p><p>Driven by an unwavering passion for her craft, MARMAR's designs reflect her unique perspective and unwavering commitment to craftsmanship. With each piece she creates, she embraces the opportunity to empower individuals, allowing them to embrace their own individuality and express their authentic selves through fashion.<\/p><p>MARMAR HALIM is not simply a fashion designer; she is a creator, an artist, and a true visionary. Her dedication to her craft and her ability to merge artistry with fashion make her an exceptional force in the industry.<\/p><p>Get ready to embark on a journey of self-expression and artistic inspiration as you delve into the captivating world of MARMAR HALIM.<\/p>",
+        "padding_top": 100,
+        "padding_bottom": 36
+      }
+    },
+    "video": {
+      "type": "about-video",
+      "settings": {
+        "video_url": "",
+        "background_image": "shopify:\/\/shop_images\/marmar-halim.webp",
+        "padding_top": 100,
+        "padding_bottom": 36
+      }
+    },
+    "0dd289af-50cd-4205-8cf8-3402893b2c6f": {
+      "type": "about-content",
+      "settings": {
+        "heading": "HOW THE LABELS VISION CAME TO LIFE",
+        "about_us_content": "<p>Deeply rooted in the rich tapestry of Arab culture, the ideals that fuel MARMAR HALIM resonate profoundly with the very essence of the label's DNA. Like intricate threads weaving through a masterpiece, these ideals shape the iconic dresses that bear the MARMAR HALIM signature. Each dress is a visual representation, capturing the essence of looks, fabrics, color schemes, and the indescribable aura that emanates from those who yearn to don them.<\/p><p>These creations, born from the core of MARMAR HALIM's being, transcend mere fashion; they embody timeless artistry. Their minimalistic elegance and distinctive appeal make them instantly recognizable, forging an eternal connection with all who encounter them. Yet, their significance extends far beyond the realm of style. Within each stitch lies an abundance of importance and deeper meaning, transcending the boundaries of fashion to touch hearts and souls.<\/p><p>Throughout her illustrious journey, MARMAR has fostered fruitful collaborations with esteemed product developers, specialists, and manufacturers worldwide. Together, they have brought to life successful lines that have resonated with discerning audiences across the globe. Drawing from her studio in the vibrant city of Dubai, MARMAR's designs now encompass a fusion of eastern and western influences, creating exquisite gowns that effortlessly bridge cultures.<\/p><p>With every creation that emerges from her studio, MARMAR HALIM weaves together a symphony of emotions, cultural heritage, and artistic brilliance. Her designs serve as a testament to the profound impact that fashion can have, transcending borders and forging connections that resonate on a soulful level.<\/p><p>Embracing the beauty of the past while embracing the spirit of the present, MARMAR HALIM's creations stand as a testament to the timeless power of fashion to transcend mere garments and become a true reflection of the human spirit. With heartfelt passion and unwavering dedication.<\/p><ul><li><\/li><\/ul>",
+        "padding_top": 180,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image",
+    "content",
+    "video",
+    "0dd289af-50cd-4205-8cf8-3402893b2c6f"
+  ]
+}

@@ -1,0 +1,422 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "h1 {font-size: 3rem !important;}"
+      ],
+      "settings": {
+        "padding_top": 64,
+        "padding_bottom": 28
+      }
+    },
+    "044dc5d2-75d1-4c6e-aa0d-17c1f2eb49be": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21732375724313__044dc5d2-75d1-4c6e-aa0d-17c1f2eb49be-column-2": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>Marmar Halim<\/strong><\/p><p>Dubai Design District, Building 7a, Office 509<\/p><p><a href=\"https:\/\/marmar-halim.com\/\" target=\"_blank\">https:\/\/marmar-halim.com<\/a><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21732375724313__044dc5d2-75d1-4c6e-aa0d-17c1f2eb49be-column-1": {
+          "type": "column",
+          "settings": {
+            "title": "UAE",
+            "text": "<h1>Dubai<\/h1><p>Harvey Nichols<\/p><h1><\/h1><h1>Abu Dhabi<\/h1><p>Tryano<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21732375724313__044dc5d2-75d1-4c6e-aa0d-17c1f2eb49be-column-3": {
+          "type": "column",
+          "settings": {
+            "title": "KOREA",
+            "text": "<h1>Seoul<\/h1><p>Marie Belle, Kayla Bennet<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "4317be8f-6ec0-47bf-bd16-f5464161864d": {
+          "type": "column",
+          "settings": {
+            "title": "BAHRAIN",
+            "text": "<h1>Bahrain<\/h1><p>SAKS<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "4c2802c2-3033-4f1e-b230-c8e3157c8b5d": {
+          "type": "column",
+          "settings": {
+            "title": "KUWAIT",
+            "text": "<h1>Kuwait<\/h1><p>Harvey Nichols<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "31fd0c75-0ffb-4cd7-a107-d7a805e855a9": {
+          "type": "column",
+          "settings": {
+            "title": "SAUDI ARABIA",
+            "text": "<h1>Riyadh<\/h1><p>Harvey Nichols<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "6b02d6e8-78da-4690-be62-8e4204228fb8": {
+          "type": "column",
+          "settings": {
+            "title": "QATAR",
+            "text": "<h1>Qatar<\/h1><p>51 East<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "58d5bbd4-1f10-42e8-9f14-58cf4aefe7ef": {
+          "type": "column",
+          "settings": {
+            "title": "NETHERLANDS",
+            "text": "<h1>Amsterdam<\/h1><p>Bloomfield Luxury Bridal<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21732375724313__044dc5d2-75d1-4c6e-aa0d-17c1f2eb49be-column-2",
+        "template--21732375724313__044dc5d2-75d1-4c6e-aa0d-17c1f2eb49be-column-1",
+        "template--21732375724313__044dc5d2-75d1-4c6e-aa0d-17c1f2eb49be-column-3",
+        "4317be8f-6ec0-47bf-bd16-f5464161864d",
+        "4c2802c2-3033-4f1e-b230-c8e3157c8b5d",
+        "31fd0c75-0ffb-4cd7-a107-d7a805e855a9",
+        "6b02d6e8-78da-4690-be62-8e4204228fb8",
+        "58d5bbd4-1f10-42e8-9f14-58cf4aefe7ef"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "38de2a87-7085-426f-be23-5a3b57965d8d": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21732375724313__38de2a87-7085-426f-be23-5a3b57965d8d-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Dubai, UAE<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "template--21732375724313__38de2a87-7085-426f-be23-5a3b57965d8d-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Harvey Nichols<\/strong><br\/>Mall of the Emirates, Dubai, United Arab Emirates<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--21732375724313__38de2a87-7085-426f-be23-5a3b57965d8d-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "View on Google Map",
+            "button_link": "https:\/\/maps.app.goo.gl\/YS1dvmDcUHHvA1P38",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21732375724313__38de2a87-7085-426f-be23-5a3b57965d8d-heading-1",
+        "template--21732375724313__38de2a87-7085-426f-be23-5a3b57965d8d-text-1",
+        "template--21732375724313__38de2a87-7085-426f-be23-5a3b57965d8d-button-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hn_Dubai.webp",
+        "page__width": true,
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-387af4c5-943a-4147-bdd6-fbca80f7673e",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "a6b54525-5583-48f0-a2d2-894f8af1cfc5": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21732375724313__a6b54525-5583-48f0-a2d2-894f8af1cfc5-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "BAHRAIN",
+            "heading_size": "h1"
+          }
+        },
+        "template--21732375724313__a6b54525-5583-48f0-a2d2-894f8af1cfc5-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Saks Fifth Avenue<\/strong><\/p><p>City Centre Bahrain Mall Manama<\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "template--21732375724313__a6b54525-5583-48f0-a2d2-894f8af1cfc5-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "View on Google Map",
+            "button_link": "https:\/\/www.google.com\/maps\/dir\/?api=1&destination=Bahrain%2CCity%20Centre%20Bahrain%20Mall%2C%20Manama%2C%20BH",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21732375724313__a6b54525-5583-48f0-a2d2-894f8af1cfc5-heading-1",
+        "template--21732375724313__a6b54525-5583-48f0-a2d2-894f8af1cfc5-text-1",
+        "template--21732375724313__a6b54525-5583-48f0-a2d2-894f8af1cfc5-button-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/saks.webp",
+        "page__width": true,
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-387af4c5-943a-4147-bdd6-fbca80f7673e",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "850cb0c5-d954-4e5e-928f-780bf59f8353": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21732375724313__850cb0c5-d954-4e5e-928f-780bf59f8353-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "KOREA",
+            "heading_size": "h1"
+          }
+        },
+        "template--21732375724313__850cb0c5-d954-4e5e-928f-780bf59f8353-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Marie Belle<\/strong><br\/>70Gil 24 Dosandaero Gangnamgu, <em>Seoul<\/em>, <em>Korea, <\/em>06064<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--21732375724313__850cb0c5-d954-4e5e-928f-780bf59f8353-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21732375724313__850cb0c5-d954-4e5e-928f-780bf59f8353-heading-1",
+        "template--21732375724313__850cb0c5-d954-4e5e-928f-780bf59f8353-text-1",
+        "template--21732375724313__850cb0c5-d954-4e5e-928f-780bf59f8353-button-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/marie_belle_bride_seoul_05.jpg",
+        "page__width": true,
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-387af4c5-943a-4147-bdd6-fbca80f7673e",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "4a5a4e75-0f79-4d30-ba01-7857a684ddcc": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21732375724313__4a5a4e75-0f79-4d30-ba01-7857a684ddcc-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "QATAR",
+            "heading_size": "h1"
+          }
+        },
+        "template--21732375724313__4a5a4e75-0f79-4d30-ba01-7857a684ddcc-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Fifty One East<\/strong><br\/>Lagoona Mall and Al Maha Center<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--21732375724313__4a5a4e75-0f79-4d30-ba01-7857a684ddcc-button-1": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21732375724313__4a5a4e75-0f79-4d30-ba01-7857a684ddcc-heading-1",
+        "template--21732375724313__4a5a4e75-0f79-4d30-ba01-7857a684ddcc-text-1",
+        "template--21732375724313__4a5a4e75-0f79-4d30-ba01-7857a684ddcc-button-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/51.jpg",
+        "page__width": true,
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-387af4c5-943a-4147-bdd6-fbca80f7673e",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "38ee07f5-241e-44d0-9aff-4510b15ffff6": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21732375724313__38ee07f5-241e-44d0-9aff-4510b15ffff6-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "SAUDI ARABIA",
+            "heading_size": "h1"
+          }
+        },
+        "template--21732375724313__38ee07f5-241e-44d0-9aff-4510b15ffff6-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Riyadh<\/strong><\/p><p>King Fahd Road Al Faisaliah Mall, Riyadh, Saudi Arabia<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--21732375724313__38ee07f5-241e-44d0-9aff-4510b15ffff6-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "View on Google Map",
+            "button_link": "https:\/\/www.google.com\/maps\/place\/Harvey+Nichols\/@24.6888288,46.6818242,17z\/data=!3m1!4b1!4m6!3m5!1s0x3e2f0338aa8765b1:0x2fc4bf4cb4b9fc2d!8m2!3d24.6888288!4d46.6843991!16s%2Fg%2F1pycl8m0m?hl=en&entry=ttu",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21732375724313__38ee07f5-241e-44d0-9aff-4510b15ffff6-heading-1",
+        "template--21732375724313__38ee07f5-241e-44d0-9aff-4510b15ffff6-text-1",
+        "template--21732375724313__38ee07f5-241e-44d0-9aff-4510b15ffff6-button-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hv_riyadh.webp",
+        "page__width": true,
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-387af4c5-943a-4147-bdd6-fbca80f7673e",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "adef4045-2f90-494d-a161-d85320c3fcc5": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21732375724313__adef4045-2f90-494d-a161-d85320c3fcc5-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "KUWAIT",
+            "heading_size": "h1"
+          }
+        },
+        "template--21732375724313__adef4045-2f90-494d-a161-d85320c3fcc5-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--21732375724313__adef4045-2f90-494d-a161-d85320c3fcc5-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "View on Google Map",
+            "button_link": "https:\/\/maps.google.com\/maps?cid=16875203399139448676",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21732375724313__adef4045-2f90-494d-a161-d85320c3fcc5-heading-1",
+        "template--21732375724313__adef4045-2f90-494d-a161-d85320c3fcc5-text-1",
+        "template--21732375724313__adef4045-2f90-494d-a161-d85320c3fcc5-button-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hv_kuwait.webp",
+        "page__width": true,
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-387af4c5-943a-4147-bdd6-fbca80f7673e",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "044dc5d2-75d1-4c6e-aa0d-17c1f2eb49be",
+    "38de2a87-7085-426f-be23-5a3b57965d8d",
+    "a6b54525-5583-48f0-a2d2-894f8af1cfc5",
+    "850cb0c5-d954-4e5e-928f-780bf59f8353",
+    "4a5a4e75-0f79-4d30-ba01-7857a684ddcc",
+    "38ee07f5-241e-44d0-9aff-4510b15ffff6",
+    "adef4045-2f90-494d-a161-d85320c3fcc5"
+  ]
+}

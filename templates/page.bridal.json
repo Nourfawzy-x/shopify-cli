@@ -1,0 +1,210 @@
+{
+  "sections": {
+    "main": {
+      "type": "lookbook",
+      "blocks": {
+        "c2cd0d00-7a56-4bff-8531-f25d891e381b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-01.jpg"
+          }
+        },
+        "4e99ed1c-b1bb-4539-a644-71e1450e2e0f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-02.jpg"
+          }
+        },
+        "0c33177d-4314-4b43-8e2e-3dcdd188f660": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-03.jpg"
+          }
+        },
+        "150324b9-1ae8-4176-a1e2-67907527e6a8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-04.jpg"
+          }
+        },
+        "6a0d8c50-6644-4330-abce-53cecd63769f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-05.jpg"
+          }
+        },
+        "c93f422e-a6c6-4fd6-ba0e-33db7b1eb6fb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-06.jpg"
+          }
+        },
+        "4368e0d3-8c61-420b-8bc8-33dbd4bcfde1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-07.jpg"
+          }
+        },
+        "877e7f66-67b8-4412-b928-a088d8dca98b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-08.jpg"
+          }
+        },
+        "cd4cb959-2816-42aa-b631-545abed87331": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-09.jpg"
+          }
+        },
+        "ddfbeeab-0005-4140-9661-2918db12b305": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-10.jpg"
+          }
+        },
+        "97c042ef-bc21-4c36-bfc8-6da99c3bc361": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-11.jpg"
+          }
+        },
+        "0c0a76d1-bf9c-44b9-ad45-5ef0a49cc5ce": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-12.jpg"
+          }
+        },
+        "b952c816-a6cc-48d4-ad32-3adec9863fe9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-13.jpg"
+          }
+        },
+        "66c309c9-f743-4eef-965f-6d0b4d9f0b94": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-14.jpg"
+          }
+        },
+        "fde0eb62-9df4-435a-8b5b-952139383693": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-15.jpg"
+          }
+        },
+        "1f30bf85-5a70-46a6-acfa-20ab0cabee66": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-16.jpg"
+          }
+        },
+        "b039a2be-2e65-40c2-b6f2-1cd97f5dacde": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-17.jpg"
+          }
+        },
+        "73dea064-2a8d-459b-8a57-b0493bcb0d47": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-18.jpg"
+          }
+        },
+        "366bab58-92b6-42f0-a960-23f2929ed08b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-19.jpg"
+          }
+        },
+        "c4ce9a76-970f-49b3-9e45-9df34bee619e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-20.jpg"
+          }
+        },
+        "63e9adfa-1ea8-4381-b3f2-e3eea55d1ca6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-21.jpg"
+          }
+        },
+        "58d837dd-e82c-4eab-bade-cd8be26c7f2c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-22.jpg"
+          }
+        },
+        "32e4b6da-10fa-425e-b80b-baadb1fae71a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-23.jpg"
+          }
+        },
+        "fee17600-921f-4264-99aa-5bddaa330c71": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-24.jpg"
+          }
+        },
+        "ffb71928-af50-4118-b458-d86200a7f70a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-25.jpg"
+          }
+        },
+        "88c713f7-2a37-4025-a1d5-fac3908e204a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-26.jpg"
+          }
+        },
+        "bca2697f-6bd5-484f-a180-77800c29a521": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bridal-27.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "c2cd0d00-7a56-4bff-8531-f25d891e381b",
+        "4e99ed1c-b1bb-4539-a644-71e1450e2e0f",
+        "0c33177d-4314-4b43-8e2e-3dcdd188f660",
+        "150324b9-1ae8-4176-a1e2-67907527e6a8",
+        "6a0d8c50-6644-4330-abce-53cecd63769f",
+        "c93f422e-a6c6-4fd6-ba0e-33db7b1eb6fb",
+        "4368e0d3-8c61-420b-8bc8-33dbd4bcfde1",
+        "877e7f66-67b8-4412-b928-a088d8dca98b",
+        "cd4cb959-2816-42aa-b631-545abed87331",
+        "ddfbeeab-0005-4140-9661-2918db12b305",
+        "97c042ef-bc21-4c36-bfc8-6da99c3bc361",
+        "0c0a76d1-bf9c-44b9-ad45-5ef0a49cc5ce",
+        "b952c816-a6cc-48d4-ad32-3adec9863fe9",
+        "66c309c9-f743-4eef-965f-6d0b4d9f0b94",
+        "fde0eb62-9df4-435a-8b5b-952139383693",
+        "1f30bf85-5a70-46a6-acfa-20ab0cabee66",
+        "b039a2be-2e65-40c2-b6f2-1cd97f5dacde",
+        "73dea064-2a8d-459b-8a57-b0493bcb0d47",
+        "366bab58-92b6-42f0-a960-23f2929ed08b",
+        "c4ce9a76-970f-49b3-9e45-9df34bee619e",
+        "63e9adfa-1ea8-4381-b3f2-e3eea55d1ca6",
+        "58d837dd-e82c-4eab-bade-cd8be26c7f2c",
+        "32e4b6da-10fa-425e-b80b-baadb1fae71a",
+        "fee17600-921f-4264-99aa-5bddaa330c71",
+        "ffb71928-af50-4118-b458-d86200a7f70a",
+        "88c713f7-2a37-4025-a1d5-fac3908e204a",
+        "bca2697f-6bd5-484f-a180-77800c29a521"
+      ],
+      "settings": {
+        "columns_mobile": 1,
+        "columns_desktop": 4,
+        "animations_reveal_on_scroll": true,
+        "padding_top": 180,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

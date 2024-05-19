@@ -1,0 +1,230 @@
+<style>
+    .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+        padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+
+    @media screen and (min-width: 750px) {
+        .section-{{ section.id }}-padding {
+            padding-top: {{ section.settings.padding_top }}px;
+            padding-bottom: {{ section.settings.padding_bottom }}px;
+        }
+    }
+
+  .lookbook-image-container {
+    --columns: 4;
+    position: relative;
+    height: calc((100vw - 72px) / var(--columns) * 1.5);
+    transition: opacity 150ms ease 0s;
+    cursor: pointer;
+  }
+
+  .lookbook-image-container > img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    inset: 0px;
+    color: transparent;
+    object-position: center center;
+    object-fit: cover;
+  }
+
+  .lookbook-modal {
+    position: fixed;
+    inset: 0px;
+    background: rgb(255, 255, 255);
+    overflow: auto;
+    z-index: 99;
+    overflow-y: scroll;
+  }
+
+  .lookbook-modal img {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    inset: 0px;
+    color: transparent;
+    object-position: top center;
+    object-fit: cover;
+  }
+
+  .lookbook-close-btn {
+    border: 0;
+    {% comment %} background: transparent; {% endcomment %}
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    background-image: url({{ 'cross.svg' | asset_url }});
+    z-index: 9999;
+  }
+
+  @media screen and (max-width: 750px) {
+    .lookbook-image-container {
+      --columns: {{ section.settings.columns_mobile }};
+    }
+
+    .lookbook-modal {
+      background: rgb(255, 255, 255);
+      overflow: auto;
+      z-index: 99;
+      overflow-y: hidden;
+      overflow-x: scroll;
+    }
+
+    .lookbook-modal img {
+      width:auto;
+      height: 100%;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('alpine:init', () => {
+    Alpine.data('lookbookItem', () => ({
+      handleLookbookItemClick(e) {
+        document.body.classList.add('overflow-hidden');
+        this.$store.lookbookModal.imageEl = this.$refs.imageContainer.innerHTML;
+        this.$store.lookbookModal.open = true;
+      },
+    }));
+
+    Alpine.store('lookbookModal', {
+      open: false,
+      imageEl: null,
+
+      close() {
+        this.open = false;
+        this.imageEl = null;
+        document.body.classList.remove('overflow-hidden');
+      },
+    });
+  });
+</script>
+
+<div class='lookbook-section section-{{ section.id }}-padding'>
+  <div class='page-width'>
+    <template x-data x-if='$store.lookbookModal.open'>
+      <div class='lookbook-modal'>
+        <button class='lookbook-close-btn' @click='$store.lookbookModal.close()'></button>
+        <div x-html='$store.lookbookModal.imageEl'></div>
+      </div>
+    </template>
+    <ul
+      class='
+        grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
+        grid--{{ section.settings.columns_desktop }}-col-desktop
+      '
+    >
+      {% for block in section.blocks %}
+        <li
+          class='grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}'
+          {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            style='--animation-order: {{ forloop.index }};'
+          {% endif %}
+          x-data='lookbookItem'
+          @click='handleLookbookItemClick'
+        >
+          <div class='lookbook-image-container' x-ref='imageContainer'>
+            <img
+              alt=''
+              sizes='(max-width: 896px) 100vw, 60vw'
+              width
+              height
+              srcset='{{ block.settings.image | image_url: width: 256 }} 256w, {{ block.settings.image | image_url: width: 384 }} 384w, {{ block.settings.image | image_url: width: 640 }} 640w, {{ block.settings.image | image_url: width: 750 }} 750w, {{ block.settings.image | image_url: width: 828 }} 828w, {{ block.settings.image | image_url: width: 1080 }} 1080w, {{ block.settings.image | image_url: width: 1200 }} 1200w, {{ block.settings.image | image_url: width: 1920 }} 1920w, {{ block.settings.image | image_url: width: 2048 }} 2048w, {{ block.settings.image | image_url: width: 3840 }} 3840w'
+              src='{{ block.settings.image | image_url: width: 3840 }}'
+              decoding='async'
+              data-nimg='fill'
+              loading='lazy'
+            >
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Lookbook",
+  "class": "section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "columns_mobile",
+      "label": "Columns (mobile)",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "label": "Columns (desktop)",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "checkbox",
+      "id": "animations_reveal_on_scroll",
+      "label": "Reveal on scroll",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 180
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lookbook",
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

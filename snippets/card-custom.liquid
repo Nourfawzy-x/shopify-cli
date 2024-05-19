@@ -1,0 +1,64 @@
+{% liquid
+  assign first_video = product.media | where: 'media_type', 'video' | first
+  assign second_images = product.media | where: 'media_type', 'image'
+%}
+
+<a
+  class='css-ngox4e es04e8v0'
+  href='{{ product.url }}'
+  x-data='productCard'
+  @mouseover='toggle'
+  @mouseout='toggle'
+  @mousemove='handleMouseMove'
+  @mouseleave='resetClipPathAnimation'
+>
+  <div>
+    <div class='css-x7bh60 e14b9ljv0' x-ref='polygonContainer'>
+      <div
+        class='css-11bft6s e1unjhlh0'
+        x-show='!active'
+      >
+        <div>
+          <img
+            alt=''
+            sizes='(max-width: 896px) 100vw, 35vw'
+            srcset='{{ product.featured_image | image_url: width: 256 }} 256w, {{ product.featured_image | image_url: width: 384 }} 384w, {{ product.featured_image | image_url: width: 640 }} 640w, {{ product.featured_image | image_url: width: 750 }} 750w, {{ product.featured_image | image_url: width: 828 }} 828w, {{ product.featured_image | image_url: width: 1080 }} 1080w, {{ product.featured_image | image_url: width: 1200 }} 1200w, {{ product.featured_image | image_url: width: 1920 }} 1920w, {{ product.featured_image | image_url: width: 2048 }} 2048w, {{ product.featured_image | image_url: width: 3840 }} 3840w'
+            src='{{ product.featured_image | image_url: width: 3840 }}'
+            decoding='async'
+            data-nimg='fill'
+            style='position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: cover; color: transparent;'
+            loading='lazy'
+            width
+            height
+          >
+        </div>
+      </div>
+      {% if first_video or second_images[1] %}
+        <div
+          class='css-11bft6s e1unjhlh0'
+          style='opacity: 1'
+          x-show='active'
+        >
+          {% if first_video %}
+            <video
+              loop=''
+              playsinline=''
+              src='{{ first_video.sources[1].url }}'
+              preload='metadata'
+              {% comment %} style='transform: translate3d(0.0435141vw, -0.111235vw, 0px);' {% endcomment %}
+              x-ref='video'
+              muted
+            ></video
+            ><i class='css-1ycg00v eva0j1r2'></i>
+          {% else %}
+            {% render 'image', image: second_images[1] %}
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+    <p>
+      <span>{{ product.title }}</span>
+      <span>{{ product.price | money }}</span>
+    </p>
+  </div>
+</a>

@@ -1,0 +1,492 @@
+<link rel='stylesheet' href='{{ 'component-list-menu.css' | asset_url }}' media='print' onload="this.media='all'">
+<link rel='stylesheet' href='{{ 'component-search.css' | asset_url }}' media='print' onload="this.media='all'">
+<link rel='stylesheet' href='{{ 'component-menu-drawer.css' | asset_url }}' media='print' onload="this.media='all'">
+<link rel='stylesheet' href='{{ 'section-header.css' | asset_url }}' media='print' onload="this.media='all'">
+<link
+  rel='stylesheet'
+  href='{{ 'component-cart-notification.css' | asset_url }}'
+  media='print'
+  onload="this.media='all'"
+>
+<link rel='stylesheet' href='{{ 'component-cart-items.css' | asset_url }}' media='print' onload="this.media='all'">
+
+{%- if settings.cart_type == 'drawer' -%}
+  {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
+  {{ 'component-cart.css' | asset_url | stylesheet_tag }}
+  {{ 'component-totals.css' | asset_url | stylesheet_tag }}
+  {{ 'component-price.css' | asset_url | stylesheet_tag }}
+  {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+{%- if settings.cart_type == 'drawer' -%}
+  <script src='{{ 'cart-drawer.js' | asset_url }}' defer='defer'></script>
+{%- endif -%}
+<script src='{{ 'search-form.js' | asset_url }}' defer='defer'></script>
+
+<noscript>{{ 'component-list-menu.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-search.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-menu-drawer.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
+
+<header
+  x-data='header'
+>
+  {% for block in section.blocks %}
+    {% if block.settings.title == 'Lookbook' %}
+      <nav
+        style='display: none;'
+        class='x-fixed x-top-0 x-left-0 x-w-full x-h-full x-bg-white x-z-10 x-pt-[14rem] x-px-[2.5rem]'
+        x-data
+        x-show="active === 'Lookbook'"
+        @click='handleClinkOnNav'
+      >
+        <div class='css-1yt1acv eyf3qg40 x-w-full x-h-full x-flex x-flex-col x-relative'>
+          <p class='x-flex x-justify-between x-sr-only'>Lookbook<button class=''>Close</button></p>
+          {% for block in section.blocks %}
+            {% if block.type == 'image' %}
+              <template x-if='activeImage === "{{ block.settings.menu_title }}"'>
+                <div
+                  class='x-absolute x-top-1/2 x-left-1/2 -x-translate-y-1/2 -x-translate-x-1/2 x-object-contain x-w-[28.373vw] x-h-[35.515vw] x-flex'
+                >
+                  {% render 'image', image: block.settings.image, class: 'x-w-full x-h-auto x-object-contain' %}
+                </div>
+              </template>
+            {% endif %}
+          {% endfor %}
+          <ul class='css-bs4953 eyf3qg41 x-grid x-grid-cols-3 x-justify-between x-text-[4rem] x-text-black x-duration-0 x-relative x-z-20'>
+            {% for link in linklists[block.settings.links].links %}
+              <li
+                :class="{ 'scroll-trigger': active === 'Lookbook', 'animate--slide-in': active === 'Lookbook' }"
+                style='--animation-order: {{ forloop.index }};'
+              >
+                <a
+                  href='{{ link.url }}'
+                  class='x-group menu-item'
+                  @mouseover="activeImage = '{{ link.title }}'"
+                  @mouseout='activeImage = null'
+                >
+                  {% assign splited_title = link.title | split: ' ' %}
+                  <p class='group-hover:-x-rotate-3 x-duration-150 menu-item'>{{ splited_title[0] }}</p>
+                  <p class='group-hover:x-rotate-3 x-duration-150 menu-item'>
+                    {{ splited_title[1] }}
+                    {{ splited_title[2] }}
+                  </p>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </nav>
+    {% endif %}
+  {% endfor %}
+
+  {% for block in section.blocks %}
+    {% if block.settings.title == 'Bridal' %}
+      <nav
+        style='display: none;'
+        class='x-fixed x-top-0 x-left-0 x-w-full x-h-full x-bg-white x-z-10 x-pt-[14rem] x-px-[2.5rem]'
+        x-data
+        x-show="active === 'Bridal'"
+        @click='handleClinkOnNav'
+      >
+        <div class='css-1yt1acv eyf3qg40 x-w-full x-h-full x-flex x-flex-col x-relative'>
+          <p class='x-flex x-justify-between x-sr-only'>Bridal<button class=''>Close</button></p>
+          {% for block in section.blocks %}
+            {% if block.type == 'image' %}
+              <template x-if='activeImage === "{{ block.settings.menu_title }}"'>
+                <div
+                  class='x-absolute x-top-1/2 x-left-1/2 -x-translate-y-1/2 -x-translate-x-1/2 x-object-contain x-w-[28.373vw] x-h-[35.515vw] x-flex'
+                >
+                  {% render 'image', image: block.settings.image, class: 'x-w-full x-h-auto x-object-contain' %}
+                </div>
+              </template>
+            {% endif %}
+          {% endfor %}
+          <ul class='css-bs4953 eyf3qg41 x-grid x-grid-cols-3 x-justify-between x-text-[4rem] x-text-black x-duration-0'>
+            {% for link in linklists[block.settings.links].links %}
+              <li
+                :class="{ 'scroll-trigger': active === 'Bridal', 'animate--slide-in': active === 'Bridal' }"
+                style='--animation-order: 1;'
+              >
+                <a
+                  href='{{ link.url }}'
+                  class='x-group menu-item'
+                  @mouseover="activeImage = '{{ link.title }}'"
+                  @mouseout='activeImage = null'
+                >
+                  {% assign splited_title = link.title | split: ' ' %}
+                  <p class='group-hover:-x-rotate-3 x-duration-150 menu-item'>{{ splited_title[0] }}</p>
+                  <p class='group-hover:x-rotate-3 x-duration-150 menu-item'>
+                    {{ splited_title[1] }}
+                    {{ splited_title[2] }}
+                  </p>
+                </a>
+              </li>
+            {% endfor %}
+            <li
+              :class="{ 'scroll-trigger': active === 'Bridal', 'animate--slide-in': active === 'Bridal' }"
+              style='--animation-order: 2;'
+            >
+              <a href='/pages/contact' class='x-group menu-item x-flex x-items-center x-gap-1'>
+                <p class='group-hover:-x-rotate-3 x-duration-150 menu-item' style='font-size: 20px;'>
+                  Book An Appointment
+                </p>
+                {% render 'icon-arrow' %}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    {% endif %}
+  {% endfor %}
+
+  {% for block in section.blocks %}
+    {% if block.settings.title == 'Shop' %}
+      <nav
+        style='display: none;'
+        class='x-fixed x-top-0 x-left-0 x-w-full x-h-full x-bg-white x-z-10 x-pt-[14rem] x-px-[2.5rem]'
+        x-data
+        x-show="active === 'Shop'"
+        @click='handleClinkOnNav'
+      >
+        <div class='css-7b7cf8 eis9ioi0 x-w-full x-h-full x-flex x-flex-col x-relative'>
+          <p class='x-sr-only'>
+            <span>Shop</span><a style='transform: none;' href='/shop'>All</a><button>Close</button>
+          </p>
+          {% for block in section.blocks %}
+            {% if block.type == 'image' %}
+              <template x-if='activeImage === "{{ block.settings.menu_title }}"'>
+                <div
+                  class='x-absolute x-top-1/2 x-left-1/2 -x-translate-y-1/2 -x-translate-x-1/2 x-object-contain x-w-[28.373vw] x-h-[35.515vw] x-flex'
+                >
+                  {% render 'image', image: block.settings.image, class: 'x-w-full x-h-auto x-object-contain' %}
+                </div>
+              </template>
+            {% endif %}
+          {% endfor %}
+          <div>
+            <div class='css-1nsibhm eis9ioi1'>
+              <p>Collection</p>
+              <ul class='x-flex x-flex-col x-justify-between x-text-[4rem] x-leading-[127%] x-text-black x-max-w-[200px]'>
+                {% for link in linklists[block.settings.links].links %}
+                  <li
+                    :class="{ 'scroll-trigger': active === 'Shop', 'animate--slide-in': active === 'Shop' }"
+                    style='--animation-order: {{ forloop.index }};'
+                  >
+                    <a
+                      href='{{ link.url }}'
+                      class='x-group menu-item'
+                      @mouseover="activeImage = '{{ link.title }}'"
+                      @mouseout='activeImage = null'
+                    >
+                      <p class='group-hover:-x-rotate-3 x-transition-all x-duration-150 menu-item'>{{ link.title }}</p>
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    {% endif %}
+  {% endfor %}
+
+  <div class='x-absolute x-h-[200vh] x-pointer-events-none md:x-pointer-events-auto md:x-h-auto md:x-fixed x-top-0 x-left-0 x-w-full x-pt-[1.5rem] x-px-[1.5rem] x-bg-transparent md:x-flex x-items-center x-justify-between x-z-30 x-group'>
+    <div
+      class='menu x-uppercase x-text-xs x-hidden md:x-block'
+      {% if template contains 'index' %}
+        :class="{ 'x-text-white': !active }"
+      {% endif %}
+    >
+      <ul class='x-flex'>
+        {% for link in linklists[section.settings.links].links %}
+          {% liquid
+            assign has_megamenu = false
+            for block in section.blocks
+              if block.type == 'megamenu'
+                if block.settings.title == link.title
+                  assign has_megamenu = true
+                endif
+              endif
+            endfor
+          %}
+          <li>
+            <a
+              href='{{ link.url }}'
+              class='x-p-[10px] menu-item'
+              {%- if has_megamenu -%}
+                @mouseover="active = '{{ link.title }}'"
+              {%- endif -%}
+              {% if link.active %}
+                style='text-decoration: line-through 3px;'
+              {% endif %}
+            >
+              {{ link.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class='menu-icons x-top-[80%] x-sticky md:x-relative md:x-top-auto'>
+      <ul class='x-flex'>
+        <li>
+          {% if template contains 'index' %}
+            <a href='' class='x-p-[10px] x-block x-pointer-events-auto x-relative' id='cart-icon-bubble'>
+              <svg
+                width='19'
+                height='21'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+                x-show='!active && !$store.iconColorMode.on'
+              >
+                <path d="M2.879 20.25.874 7.22h17.252L16.12 20.25H2.88Z" stroke="#fff" stroke-width="1.5"></path>
+                <path stroke="#fff" stroke-width="1.5" d="m11.706 1.47 5.588 5.588"></path>
+                <path stroke="#fff" stroke-width="1.5" d="M7.294 1.47 1.706 7.058"></path>
+              </svg>
+              <svg
+                width='19'
+                height='21'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+                x-show='active || $store.iconColorMode.on'
+              >
+                <path d="M2.879 20.25.874 7.22h17.252L16.12 20.25H2.88Z" stroke="#000" stroke-width="1.5"></path>
+                <path stroke="#000" stroke-width="1.5" d="m11.706 1.47 5.588 5.588"></path>
+                <path stroke="#000" stroke-width="1.5" d="M7.294 1.47 1.706 7.058"></path>
+              </svg>
+              {%- if cart.item_count < 100 -%}
+                <span
+                  class='x-absolute x-top-[14px] x-left-[17px] x-text-xs x-text-white'
+                  :class="{ 'x-text-white': !$store.iconColorMode.on }"
+                >
+                  {{- cart.item_count -}}
+                </span>
+              {%- endif -%}
+            </a>
+          {% else %}
+            <a href='' class='x-p-[10px] x-block x-pointer-events-auto x-relative' id='cart-icon-bubble'>
+              <svg width='19' height='21' fill='none' xmlns='http://www.w3.org/2000/svg' x-show='!active'>
+                <path d="M2.879 20.25.874 7.22h17.252L16.12 20.25H2.88Z" stroke="#000" stroke-width="1.5"></path>
+                <path stroke="#000" stroke-width="1.5" d="m11.706 1.47 5.588 5.588"></path>
+                <path stroke="#000" stroke-width="1.5" d="M7.294 1.47 1.706 7.058"></path>
+              </svg>
+              {%- if cart.item_count < 100 -%}
+                <span class='x-absolute x-top-[14px] x-left-[17px] x-text-xs'>{{ cart.item_count }}</span>
+              {%- endif -%}
+            </a>
+          {% endif %}
+        </li>
+        <li>
+          <a href='#' class='x-p-[10px] x-block x-pointer-events-auto'>
+            {% if template contains 'index' %}
+              <template x-if='!active && !$store.iconColorMode.on'>
+                <svg
+                  width='19'
+                  height='18'
+                  fill='none'
+                  xmlns='http://www.w3.org/2000/svg'
+                  class='css-xbst6u e1gre8uj1'
+                >
+                  <mask id="a" fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.398 1.549c-1.864 2.065-1.864 5.413 0 7.478l1.35 1.495L9.5 18l6.751-7.478 1.35-1.495c1.865-2.065 1.865-5.413 0-7.478-1.864-2.065-4.887-2.065-6.751 0L9.5 3.044 8.15 1.55c-1.865-2.065-4.887-2.065-6.752 0Z"></path></mask><path fill-rule="evenodd" clip-rule="evenodd" fill="rgba(0, 0, 0, 0)" d="M1.398 1.549c-1.864 2.065-1.864 5.413 0 7.478l1.35 1.495L9.5 18l6.751-7.478 1.35-1.495c1.865-2.065 1.865-5.413 0-7.478-1.864-2.065-4.887-2.065-6.751 0L9.5 3.044 8.15 1.55c-1.865-2.065-4.887-2.065-6.752 0Z"></path><path d="M1.398 9.027.285 10.032l1.113-1.005Zm0-7.478L.285.544l1.113 1.005Zm1.35 8.973 1.114 1.005.907-1.005-.907-1.005-1.114 1.005Zm0 0L1.634 9.518l-.906 1.005.907 1.004 1.113-1.005ZM9.5 18l-1.114 1.005 1.116 1.236 1.113-1.238L9.5 18Zm0 0 1.115-1.003L9.5 15.756l-1.116 1.241L9.5 18Zm0 0-1.116 1.003 1.113 1.238 1.116-1.236L9.5 18Zm6.751-7.478 1.114 1.005.908-1.006-.91-1.005-1.112 1.006Zm0 0-1.113-1.005-.909 1.006.91 1.005 1.112-1.006Zm1.35-1.495 1.114 1.005L17.6 9.027Zm0-7.478-1.113 1.005L17.6 1.549Zm-6.751 0 1.113 1.005-1.113-1.005ZM9.5 3.044 8.386 4.05 9.5 5.283l1.113-1.234L9.5 3.044ZM8.15 1.55 9.263.544 8.15 1.549ZM2.512 8.02c-1.35-1.494-1.35-3.973 0-5.467L.285.544c-2.38 2.636-2.38 6.852 0 9.488l2.227-2.01Zm1.35 1.496L2.512 8.02l-2.227 2.01 1.35 1.496 2.227-2.01Zm0 2.01-2.228-2.01 2.228 2.01Zm6.751 5.468L3.862 9.517l-2.227 2.01 6.751 7.478 2.227-2.01Zm-2.229.002 2.231 2.006-2.23-2.006Zm2.232 0-2.232 2.006 2.232-2.006Zm4.522-7.48-6.751 7.478 2.226 2.01 6.752-7.478-2.227-2.01Zm0 2.011 2.226-2.012-2.225 2.012Zm1.35-3.507-1.35 1.496 2.226 2.01 1.35-1.495-2.226-2.01Zm0-5.467c1.349 1.494 1.349 3.973 0 5.467l2.227 2.01c2.38-2.635 2.38-6.851 0-9.487l-2.227 2.01Zm-4.525 0c1.269-1.405 3.256-1.405 4.525 0l2.227-2.01c-2.46-2.725-6.518-2.725-8.978 0l2.226 2.01Zm-1.35 1.495 1.35-1.495L9.737.544l-1.35 1.495 2.226 2.01ZM7.036 2.554l1.35 1.495 2.227-2.01L9.263.544l-2.227 2.01Zm-4.524 0c1.268-1.405 3.256-1.405 4.524 0L9.263.544c-2.46-2.725-6.518-2.725-8.978 0l2.227 2.01Z" fill="#fff" mask="url(#a)"></path>
+                </svg>
+              </template>
+              <template x-if='active || $store.iconColorMode.on'>
+                {%- render 'icon-wishlist', inverted: false -%}
+              </template>
+            {% else %}
+              {% render 'icon-wishlist', inverted: false %}
+            {% endif %}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  {% unless template contains 'product' or template contains 'page' %}
+    {% if section.settings.logo %}
+      <div class='x-w-[18.1rem] x-left-[1.2rem] x-absolute x-top-1/2 x-translate-y-1/2'>
+        <a href='{{ routes.root_url }}'>
+          <img
+            src='{{ section.settings.logo | image_url: width: 200 }}'
+            alt='{{ shop.name }}'
+            width='181'
+            height='auto'
+            loading='lazy'
+            class='x-w-full'
+          >
+        </a>
+      </div>
+    {% endif %}
+  {% endunless %}
+
+  <div class='x-fixed x-top-0 x-left-0 x-w-full x-pt-[1.5rem] x-px-[1.5rem] x-bg-transparent x-flex md:x-hidden x-items-center x-justify-center x-z-30 x-group'>
+    <button
+      class='x-bg-transparent x-inline x-border-b-2 x-border-[#000] x-text-xs x-uppercase'
+      :class="{ 'x-text-white': mobileMenu, 'x-border-[#fff]': mobileMenu }"
+      @click='mobileMenu = !mobileMenu'
+    >
+      <span x-show='!mobileMenu'>MENU</span>
+      <span style='display: none;' x-show='mobileMenu'>CLOSE</span>
+    </button>
+  </div>
+
+  <div
+    class='x-fixed x-top-0 x-left-full x-w-full x-transition x-h-full x-bg-[#171717] x-pt-[12vh] x-px-[2.82vmin] x-pb-[6.153vmin]'
+    :class="{ 'x-left-full': !mobileMenu }"
+  >
+    <ul class='x-mt-[9rem]'>
+      {% for link in linklists[section.settings.links].links %}
+        <li>
+          <a
+            href='{{ link.url }}'
+            class='x-text-white x-py-[3.846vmin] x-px-[2.564vmin] x-text-[10.256vmin] x-uppercase x-block'
+            {% if link.active %}
+              style='text-decoration: line-through 3px;'
+            {% endif %}
+          >
+            <span
+              {% if link.active %}
+                style='border-bottom: 3px solid white;'
+              {% else %}
+                style='border-bottom: 3px solid transparent;'
+              {% endif %}
+            >
+              {{- link.title -}}
+            </span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <ul class='x-pt-[7rem]'>
+      {% for link in linklists[section.settings.secondary_links].links %}
+        <li>
+          <a href='{{ link.url }}' class='x-text-white x-py-[3.846vmin] x-px-[2.564vmin] x-text-[5.128vmin] x-block'>
+            {{- link.title -}}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <a
+      href='{{ settings.social_instagram_link }}'
+      class='x-text-[5.128vmin] x-absolute x-bottom-[30px] x-left-[30px] x-text-white'
+    >
+      {{ section.settings.insta_handle }}
+    </a>
+  </div>
+
+  {% if template contains 'collection' %}
+    <div class='shop-header x-flex md:x-hidden x-justify-evenly x-relative x-top-[10rem]'>
+      <p class='x-text-xs x-uppercase'>SHOP</p>
+      <a class='x-text-xs x-underline x-uppercase' @click="active = 'Shop'">
+        {% if collection.handle == 'all' %}Collections {% else %}{{- collection.title | escape -}}{% endif %}
+      </a>
+    </div>
+  {% endif %}
+</header>
+
+<script>
+  document.addEventListener('alpine:init', () => {
+    Alpine.store('iconColorMode', {
+      on: false,
+
+      toggle() {
+        this.on = !this.on;
+      },
+      turnOn() {
+        if (window.matchMedia('(max-width: 991px)').matches) this.on = true;
+      },
+      turnOff() {
+        if (window.matchMedia('(max-width: 991px)').matches) this.on = false;
+      },
+    });
+    Alpine.data('header', () => ({
+      active: null,
+      activeImage: null,
+      mobileMenu: false,
+      init() {
+        this.$watch('active', (value) => {
+          if (value !== null) {
+            document.body.style.overflow = 'hidden';
+          } else {
+            document.body.style.overflow = 'auto';
+          }
+        });
+      },
+      setActive(id) {
+        this.active = id;
+      },
+      handleClinkOnNav(e) {
+        if (!e.currentTarget.classList.contains('menu-item')) {
+          this.active = null;
+        }
+      },
+    }));
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "link_list",
+      "id": "links",
+      "label": "Main Menu List"
+    },
+    {
+      "type": "link_list",
+      "id": "secondary_links",
+      "label": "Mobile Menu Sub Links"
+    },
+    {
+      "type": "text",
+      "id": "insta_handle",
+      "label": "Instagram Handle",
+      "default": "@marmarhalim"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "megamenu",
+      "name": "Mega Menu",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title of the menu item",
+          "default": "Mega Menu"
+        },
+        {
+          "type": "link_list",
+          "id": "links",
+          "label": "Link list"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "text",
+          "id": "menu_title",
+          "label": "Menu title",
+          "default": "Lookbook"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

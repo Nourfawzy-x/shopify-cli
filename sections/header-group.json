@@ -1,0 +1,102 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "header": {
+      "type": "header",
+      "blocks": {
+        "9969d620-cffa-4b26-b5e5-49ea3f3c6c28": {
+          "type": "megamenu",
+          "settings": {
+            "title": "Shop",
+            "links": "shop"
+          }
+        },
+        "092a790a-e55e-4fd3-90dd-17e078b7a680": {
+          "type": "megamenu",
+          "settings": {
+            "title": "Lookbook",
+            "links": "lookbook"
+          }
+        },
+        "5a37475c-930d-4bb2-86e1-3e534537c0ad": {
+          "type": "megamenu",
+          "settings": {
+            "title": "Bridal",
+            "links": "bridal"
+          }
+        },
+        "image_TMQQkE": {
+          "type": "image",
+          "settings": {
+            "menu_title": "Lookbook",
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_35_1.jpg"
+          }
+        },
+        "2234a9ab-0c20-4f49-9a15-0cfe82a82fe4": {
+          "type": "image",
+          "settings": {
+            "menu_title": "Resort",
+            "image": "shopify:\/\/shop_images\/bridal-4.webp"
+          }
+        },
+        "8bf1d3e9-77d6-4124-9ab2-1ae476706194": {
+          "type": "image",
+          "settings": {
+            "menu_title": "SS23",
+            "image": "shopify:\/\/shop_images\/bridal-2.webp"
+          }
+        },
+        "6d93e785-2cdc-45e9-91ca-5558c98cc7ed": {
+          "type": "image",
+          "settings": {
+            "menu_title": "AW23  Hawma’a",
+            "image": "shopify:\/\/shop_images\/bridal-5.webp"
+          }
+        },
+        "6253cf72-cb05-4df9-afef-6150d0f12aae": {
+          "type": "image",
+          "settings": {
+            "menu_title": "SS23  MAR",
+            "image": "shopify:\/\/shop_images\/bridal.webp"
+          }
+        },
+        "826186bb-02dc-4fa2-86ef-2f82eb2d98af": {
+          "type": "image",
+          "settings": {
+            "menu_title": "SS22  Messy World",
+            "image": "shopify:\/\/shop_images\/MARMAR_224674_959ae68d3c.webp"
+          }
+        },
+        "652f4d01-7ef8-4a9a-a24a-06ebb2c979f7": {
+          "type": "image",
+          "settings": {
+            "menu_title": "SS22  MAR Bridal",
+            "image": "shopify:\/\/shop_images\/bridal-22.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "9969d620-cffa-4b26-b5e5-49ea3f3c6c28",
+        "092a790a-e55e-4fd3-90dd-17e078b7a680",
+        "5a37475c-930d-4bb2-86e1-3e534537c0ad",
+        "image_TMQQkE",
+        "2234a9ab-0c20-4f49-9a15-0cfe82a82fe4",
+        "8bf1d3e9-77d6-4124-9ab2-1ae476706194",
+        "6d93e785-2cdc-45e9-91ca-5558c98cc7ed",
+        "6253cf72-cb05-4df9-afef-6150d0f12aae",
+        "826186bb-02dc-4fa2-86ef-2f82eb2d98af",
+        "652f4d01-7ef8-4a9a-a24a-06ebb2c979f7"
+      ],
+      "settings": {
+        "logo": "shopify:\/\/shop_images\/marmar-halim.svg",
+        "links": "main-menu",
+        "secondary_links": "secondary-menu",
+        "insta_handle": "@marmarhalim"
+      }
+    }
+  },
+  "order": [
+    "header"
+  ]
+}

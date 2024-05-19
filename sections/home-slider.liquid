@@ -1,0 +1,52 @@
+{% comment %}
+  {% liquid
+    render 'vite-tag' with 'slider.ts'
+  %}
+{% endcomment %}
+
+<script src='{{ 'slider-AyWaY_ko.js' | asset_url }}' defer='defer'></script>
+
+{% liquid
+  assign images = ''
+  for block in section.blocks
+    assign image = block.settings.image | image_url: width: 1920, height: 1080, crop: 'top'
+    assign images = images | append: image | append: ' '
+  endfor
+%}
+
+<section class=''>
+  <div class='x-relative x-h-[100vh]'>
+    <ken-burns-carousel
+      images='{{ images }}'
+      class='x-absolute x-top-0 x-left-0 x-w-full x-h-full x-z-0'
+      animation-names='ken-burns-center'
+      direction='reverse'
+    >
+    </ken-burns-carousel>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Home Carousel",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home Carousel"
+    }
+  ]
+}
+{% endschema %}

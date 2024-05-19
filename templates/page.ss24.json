@@ -1,0 +1,182 @@
+{
+  "sections": {
+    "main": {
+      "type": "lookbook",
+      "blocks": {
+        "image_M34B6F": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_11_1.jpg"
+          }
+        },
+        "image_3JCcU4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_2_1.jpg"
+          }
+        },
+        "image_Fq9LfA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_4.jpg"
+          }
+        },
+        "image_ajbwKU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_33.jpg"
+          }
+        },
+        "image_AKki6r": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_10.jpg"
+          }
+        },
+        "image_cWVXfa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_21.jpg"
+          }
+        },
+        "image_E8jp3U": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_23.jpg"
+          }
+        },
+        "image_jhet9d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_15.jpg"
+          }
+        },
+        "image_NJLfJD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_28.jpg"
+          }
+        },
+        "image_RCtaXV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_6.jpg"
+          }
+        },
+        "image_URBqR3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_20.jpg"
+          }
+        },
+        "image_zzLiJf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_7.jpg"
+          }
+        },
+        "image_g66XYT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_18_1.jpg"
+          }
+        },
+        "image_GrLfkQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_27_1.jpg"
+          }
+        },
+        "image_UEmEdK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM.JPG_10.jpg"
+          }
+        },
+        "image_kWJBXC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_32_1.jpg"
+          }
+        },
+        "image_J8DxbW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_24.jpg"
+          }
+        },
+        "image_b9mbiy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_31_1.jpg"
+          }
+        },
+        "image_G9E699": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_9.jpg"
+          }
+        },
+        "image_YQ8WHB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_35_1.jpg"
+          }
+        },
+        "image_CyWWjG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_26.jpg"
+          }
+        },
+        "image_FcUQ9p": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_29.jpg"
+          }
+        },
+        "image_dPrnNM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_36.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_M34B6F",
+        "image_3JCcU4",
+        "image_Fq9LfA",
+        "image_ajbwKU",
+        "image_AKki6r",
+        "image_cWVXfa",
+        "image_E8jp3U",
+        "image_jhet9d",
+        "image_NJLfJD",
+        "image_RCtaXV",
+        "image_URBqR3",
+        "image_zzLiJf",
+        "image_g66XYT",
+        "image_GrLfkQ",
+        "image_UEmEdK",
+        "image_kWJBXC",
+        "image_J8DxbW",
+        "image_b9mbiy",
+        "image_G9E699",
+        "image_YQ8WHB",
+        "image_CyWWjG",
+        "image_FcUQ9p",
+        "image_dPrnNM"
+      ],
+      "settings": {
+        "columns_mobile": 1,
+        "columns_desktop": 4,
+        "animations_reveal_on_scroll": true,
+        "padding_top": 64,
+        "padding_bottom": 56
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

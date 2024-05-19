@@ -1,0 +1,198 @@
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+{{ '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' | stylesheet_tag }}
+
+
+
+<section class="Contact-form">
+  .
+  <h2>Contact form</h2>
+  <div class="informations">
+    <div class="info">
+      <div class="icons"><i class="fas fa-map-marker-alt fa-md"></i></div>
+      <div>
+        <p>
+          <span>Address:</span
+          ><span class="Address"
+            >198 West 21th Street, Suite 721 New York NY 10016
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="info">
+      <div class="icons"><i class="fas fa-phone-volume fa-md"></i></div>
+      <div>
+        <p><span>Phone:</span> + 1235 2355 98</p>
+      </div>
+    </div>
+    <div class="info">
+      <div class="icons"><i class="far fa-envelope fa-md"></i></div>
+      <div>
+        <p><span>Email:</span>info@yoursite.com</p>
+      </div>
+    </div>
+    <div class="info">
+      <div class="icons"><i class="fas fa-globe-americas fa-md"></i></div>
+      <div>
+        <p><span>Website</span> yoursite.com</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact-us">
+  <div class="contact-us">
+    <h3>Contact Us</h3>
+    <div class="two-sides">
+      <div class="left-side">
+        <div class="contact-container">
+          <label class="label" for="name">Full Name</label>
+          <br />
+          <input
+            type="text"
+            class="form-control"
+            name="name"
+            id="name"
+            placeholder="Name"
+          />
+        </div>
+        <div class="contact-container">
+          <label class="label" for="email">Email Adress</label>
+          <br />
+
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            id="email"
+            placeholder="Email Adress"
+          />
+        </div>
+        <div class="contact-container">
+          <label class="label" for="phone">Mobile Number</label>
+          <br />
+          <input
+            type="number"
+            class="form-control"
+            name="phone"
+            id="phone"
+            placeholder="mobile number"
+          />
+        </div>
+        <div class="contact-container">
+          <label for="message" class="label">Enter your message:</label
+          ><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="20"
+            class="form-control"
+          ></textarea
+          ><br />
+        </div>
+        <button>Send Message</button>
+      </div>
+      <div class="right-side">
+        <img src="{{ assests_c:\Users\CompuMart\Downloads\shopify2\ww_global_model_spotlight_moment_870x1110.jpg }}" alt="model" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+{% schema %}
+{
+  "name": "t:sections.contact-form.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "address",
+      "label": "Address",
+      "default": "<p></p>"
+    },
+    {
+      "type": "url",
+      "id": "map_link",
+      "label": "Map Link"
+    },
+    {
+      "type": "text",
+      "id": "email",
+      "label": "Email",
+      "default": "info@marmarhalim.com"
+    },
+    {
+      "type": "text",
+      "id": "whatsapp",
+      "label": "Whatsapp",
+      "default": "+971 56 497 3497"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Contact form",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 180
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.contact-form.presets.name"
+    }
+  ]
+}
+{% endschema %}

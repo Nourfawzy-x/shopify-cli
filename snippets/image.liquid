@@ -1,0 +1,13 @@
+<img
+  alt='{{ alt }}'
+  sizes='(max-width: 896px) 100vw, 35vw'
+  srcset='{{ image | image_url: width: 256 }} 256w, {{ image | image_url: width: 384 }} 384w, {{ image | image_url: width: 640 }} 640w, {{ image | image_url: width: 750 }} 750w, {{ image | image_url: width: 828 }} 828w, {{ image | image_url: width: 1080 }} 1080w, {{ image | image_url: width: 1200 }} 1200w, {{ image | image_url: width: 1920 }} 1920w, {{ image | image_url: width: 2048 }} 2048w, {{ image | image_url: width: 3840 }} 3840w'
+  src='{{ image | image_url: width: 3840 }}'
+  decoding='async'
+  data-nimg='fill'
+  class='{{ class }}'
+  style='{{ style }}'
+  loading='lazy'
+  width='{{ width }}'
+  height='{{ height }}'
+>

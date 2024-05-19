@@ -1,0 +1,70 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "206e4e8e-f3f2-4be1-a37a-d39313c95def": {
+          "type": "newsletter",
+          "settings": {
+            "newsletter_heading": "Subscribe to our newsletter"
+          }
+        },
+        "footer-0": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "menu": "about"
+          }
+        },
+        "footer-1": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "menu": "policies"
+          }
+        },
+        "a97c2b83-3ef3-4012-a2de-cde3c0d5af18": {
+          "type": "currecy_picker",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "c6ed0bb0-3df4-4ede-9d58-124fc709ef71": {
+          "type": "social_media",
+          "settings": {
+            "insta_handle_1": "@marmarhalim",
+            "insta_link_1": "https:\/\/www.instagram.com\/marmarhalim",
+            "insta_handle_2": "@marbridal",
+            "insta_link_2": "https:\/\/www.instagram.com\/marbridal"
+          }
+        }
+      },
+      "block_order": [
+        "206e4e8e-f3f2-4be1-a37a-d39313c95def",
+        "footer-0",
+        "footer-1",
+        "a97c2b83-3ef3-4012-a2de-cde3c0d5af18",
+        "c6ed0bb0-3df4-4ede-9d58-124fc709ef71"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": true,
+        "show_policy": false,
+        "margin_top": 48,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

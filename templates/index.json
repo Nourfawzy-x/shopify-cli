@@ -1,0 +1,64 @@
+{
+  "sections": {
+    "d981394a-2860-4edd-bb45-05826faae4f7": {
+      "type": "home-slider",
+      "blocks": {
+        "image_6baWQk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MARMARHALIM_GaiaBonanomi_JPG_WEB_72_1_2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_6baWQk"
+      ],
+      "settings": {
+      }
+    },
+    "e1582b37-db11-4c9e-82c5-ffbd84fdb5cc": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16541074260131__e1582b37-db11-4c9e-82c5-ffbd84fdb5cc-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "MAR aesthetic balances on the edge. It is elegant and timeless, yet it takes unexpected turns, pushing boundaries to explore the new.",
+            "heading_size": "h1"
+          }
+        },
+        "491e7c1c-6c8a-42b4-bc62-a319bd5b181f": {
+          "type": "link",
+          "settings": {
+            "button_label": "About",
+            "button_link": "shopify:\/\/pages\/get-in-touch"
+          }
+        },
+        "ac89f494-ddbd-4285-8250-cf3763a7f87c": {
+          "type": "link",
+          "settings": {
+            "button_label": "Lookbook",
+            "button_link": "shopify:\/\/pages\/lookbook"
+          }
+        }
+      },
+      "block_order": [
+        "template--16541074260131__e1582b37-db11-4c9e-82c5-ffbd84fdb5cc-heading-1",
+        "491e7c1c-6c8a-42b4-bc62-a319bd5b181f",
+        "ac89f494-ddbd-4285-8250-cf3763a7f87c"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "full_height": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "d981394a-2860-4edd-bb45-05826faae4f7",
+    "e1582b37-db11-4c9e-82c5-ffbd84fdb5cc"
+  ]
+}
